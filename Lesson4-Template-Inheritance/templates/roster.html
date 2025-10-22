@@ -5,11 +5,11 @@
 <div class="stats">
     <strong>Total Students: </strong>{{students|length}}
     {#Enhanced Statistics with Filters#}
-    <strong>Juniors :</strong>
+    <strong>Juniors:</strong>
     {%set junior_count = students|selectattr('Grade', 'equalto', '11')|list|length%} {{junior_count}}
     <strong>Males: </strong>
     {%set male_count = students|selectattr('Gender', 'equalto', 'M')|list|length%} {{male_count}}
-    <strong>Females</strong>
+    <strong>Females: </strong>
     {%set female_count = students|selectattr('Gender', 'equalto', 'F')|list|length%} {{female_count}}
 </div>
 <table>
